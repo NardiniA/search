@@ -1,0 +1,25 @@
+input[type=text] {
+    width: 65%;
+    padding: 15px;
+    margin: 20px 10px;
+    background-color: white;
+    background-image: url('../img/searchicon2.png');
+    background-size: 20px;
+    background-position: 12px 12px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 25px;
+    border: 1px solid #d8d4d4;
+    outline: none;
+}
+
+input[type=text]:hover {
+    box-shadow: 3px 3px 1px lightgrey;
+    outline: none;
+}
+
+input[type=text]:focus {
+    box-shadow: 3px 3px 1px lightgrey;
+    outline: none;
+}
