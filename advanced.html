@@ -24,68 +24,71 @@
     </div>
 
     <div id = "main">
-        <p>Advanced Search</p>
+        <div class="bar">
+            <p>Advanced Search</p>
+        </div>
+        
         <hr />
-        <p>Find Pages with...</p>
         <div class = "inputs">
             <form action = "" method = "GET">
+                <div class="grid-container">
+                    <!-- Form Titles -->
+                    <div class="grid-item">
+                        Find Pages with ...
+                    </div>
+                    <div class="grid-item">&nbsp;</div>
+                    <div class="grid-item" id="howto-title" style = "margin: 0; padding: 10px 0px;">
+                        To do this in the search box.
+                    </div>
+                    <!-- All these words inputs -->
+                    <div class="grid-item">
+                        <label for ="atw">all these words:</label>
+                    </div>
+                    <div class="grid-item">
+                        <input class = "jfk-textinput" value = "" autofocus="autofocus" id = "atw" name = "as_q" type = "text" />
+                    </div>
+                    <div class="grid-item howto">
+                        <div class = "info">Type the important words: <span class="info-eg">tri-colour rat terrier</span></div>
+                    </div>
+                    
+                    <!-- Exact word or phrase inputs -->
+                    <div class="grid-item">
+                        <label for="ewp">this exact word or phrase:</label>
+                    </div>
+                    <div class="grid-item">
+                        <input class="jfk-textinput" value="" id="ewp" name="as_epq" type="text" />
+                    </div>
+                    <div class="grid-item howto">
+                        <div class="info">Put exact words in quotes: <span class="info-eg">"rat terrier"</span>
+                        </div>
+                    </div>
 
-                <!--<div class = "input-container">
-                    <p class = "contents des">...all these words:</p>
-                    <input style = "width: 50%;" type = "text"  name = "as_q" class = "contents" />
-                    <p class = "contents ex">Example: "Example"</p>
-                </div> -->
+                    <!-- Any of these words inputs-->
+                    <div class="grid-item">
+                        <label for="aofw">any of these words:</label>
+                    </div>
+                    <div class="grid-item">
+                        <input class="jfk-textinput" value="" id="aofw" name="as_oq" type="text" />
+                    </div>
+                    <div class="grid-item howto">
+                        <div class="info">Type <span class="info-eg">OR</span> between all the words you want: <span class="info-eg">miniature OR standard</span>
+                        </div>
+                    </div>
+
+                    <!-- None of these words inputs -->
+                    <div class="grid-item">
+                        <label for="notw">none of these words:</label>
+                    </div>
+                    <div class="grid-item">
+                        <input class="jfk-textinput" value="" id="notw" name="as_eq" type="text" />
+                    </div>
+                    <div class="grid-item howto">
+                        <div class="info">Put a minus sign just before words that you don't want: <span class="info-eg">-rodent,
+                            -"Jack Russell"</span>
+                        </div>
+                    </div>
+                </div>
             </form>
-        </div>
-    </div>
-
-    <div class="otByu">
-        <div class="yIQOUb">
-            <div class="FAcADc">
-                <div class="lOTAE"> <label for="xX4UFf">all these words:</label> </div>
-            </div>
-            <div class="jYcx0e">
-                <div class="PLLUQc"> <input class="jfk-textinput" value="" autofocus="autofocus" id="xX4UFf" name="as_q"
-                        type="text"> </div>
-            </div>
-            <div class="cwqNnb dulCv">
-                <div class="lOTAE">Type the important words: <span class="BFlQMb">tri-colour rat terrier</span> </div>
-            </div>
-        </div>
-        <div class="yIQOUb">
-            <div class="FAcADc">
-                <div class="lOTAE"> <label for="CwYCWc">this exact word or phrase:</label> </div>
-            </div>
-            <div class="jYcx0e">
-                <div class="PLLUQc"> <input class="jfk-textinput" value="" id="CwYCWc" name="as_epq" type="text"> </div>
-            </div>
-            <div class="cwqNnb dulCv">
-                <div class="lOTAE">Put exact words in quotes: <span class="BFlQMb">"rat terrier"</span> </div>
-            </div>
-        </div>
-        <div class="yIQOUb">
-            <div class="FAcADc">
-                <div class="lOTAE"> <label for="mSoczb">any of these words:</label> </div>
-            </div>
-            <div class="jYcx0e">
-                <div class="PLLUQc"> <input class="jfk-textinput" value="" id="mSoczb" name="as_oq" type="text"> </div>
-            </div>
-            <div class="cwqNnb dulCv">
-                <div class="lOTAE">Type <span class="BFlQMb">OR</span> between all the words you want: <span
-                        class="BFlQMb">miniature OR standard</span> </div>
-            </div>
-        </div>
-        <div class="yIQOUb">
-            <div class="FAcADc">
-                <div class="lOTAE"> <label for="t2dX1c">none of these words:</label> </div>
-            </div>
-            <div class="jYcx0e">
-                <div class="PLLUQc"> <input class="jfk-textinput" value="" id="t2dX1c" name="as_eq" type="text"> </div>
-            </div>
-            <div class="cwqNnb dulCv">
-                <div class="lOTAE">Put a minus sign just before words that you don't want: <span class="BFlQMb">-rodent,
-                        -"Jack Russell"</span> </div>
-            </div>
         </div>
     </div>
 
@@ -99,10 +102,6 @@
             <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none"
                 class="footer-link">Business</a>
             <a href="https://www.google.com/search/howsearchworks/?fg=1" class="footer-link">How Search works</a>
-
-            <a href="https://policies.google.com/privacy?hl=en-GB&fg=1" id="privacy">Privacy</a>
-            <a href="https://policies.google.com/terms?hl=en-GB&fg=1" id="terms">Terms</a>
-            <a href="#" id="settings">Settings</a>
         </div>
     </div>
 </body>

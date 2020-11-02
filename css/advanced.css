@@ -75,8 +75,8 @@
 
 .img-thumbnail {
     float: left;
-    width: 100px;
-    height: auto;
+    width: auto;
+    height: 30px;
     margin: 20px;
 }
 
@@ -96,10 +96,6 @@
     font-size: 22px;
 }
 
-form {
-    overflow-x: auto;
-}
-
 .inputs {
     width: 100%;
 }
@@ -116,42 +112,12 @@ form {
     width: 25%;
 }
 
-.otByu {
-    width: 85%;
-    clear: both;
-}
-
-div.otByu div.yIQOUb {
-    clear: both;
-}
-
-div.otByu div.FAcADc {
-    float: left;
-    display: inline-block;
-    height: 42px;
-    color: #222;
-    font-size: 13px;
-    line-height: 16px;
-    vertical-align: middle;
-}
-
-div.lOTAE {
+div.info {
     height: 30px;
     display: table-cell;
     vertical-align: middle;
-}
-
-div.otByu div.jYcx0e {
-    float:left;
-    display:inline-block;
-    min-width:167px;
-    min-height:41px;
-    vertical-align:middle;
-    width:50%;
-}
-
-.PLLUQc {
-    padding-right:16px;
+    position: absolute;
+    top: 40%;
 }
 
 .jfk-textinput {
@@ -163,6 +129,7 @@ div.otByu div.jYcx0e {
     font-size:13px;
     height:25px;
     padding:1px 8px;
+    width: 100%;
 }
 
 .jfk-textinput:focus {
@@ -176,15 +143,63 @@ div.otByu div.jYcx0e {
     display:none;
 }
 
-div.cwqNnb {
-    float:left;
-    display:inline-block;
-    width:32%;
-    min-width:160px;
-    margin:0 0 8px 1%;
+.info-eg {
+    color: #666;
+    font-family: monospace;
+    font-size: 11px;
+    white-space: pre;
+}
+
+.grid-container {
+    display: grid;
+    width: 75%;
+    grid-template-columns: 200px auto auto;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+.grid-item {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0;
+}
+
+.howto {
     color:#555;
     font-size:11px;
     padding-left:5px;
     vertical-align:middle;
     position:relative;
+}
+
+#howto-title {
+    color: #777;
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.grid-item > label {
+    font-size: 14px;
+}
+
+.bar {
+    color: #d93025;
+    font-size: 20px;
+    margin: 25px 35px;
+    padding-top: 1px;
+}
+
+@media (max-width: 1000px) {
+    .grid-container {
+        grid-template-columns: 150px auto;
+        width: 90%;
+    }
+
+    .howto {
+        display: none;
+    }
+
+    #howto-title {
+        display: none;
+    }
 }
