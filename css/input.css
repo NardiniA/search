@@ -15,11 +15,11 @@ input[type=text] {
 }
 
 input[type=text]:hover {
-    box-shadow: 3px 3px 1px lightgrey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     outline: none;
 }
 
 input[type=text]:focus {
-    box-shadow: 3px 3px 1px lightgrey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     outline: none;
 }
