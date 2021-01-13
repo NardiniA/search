@@ -210,3 +210,8 @@ body {
     text-decoration: none;
     margin: 5px 10px;
 }
+
+.link:hover {
+    color: rgb(90, 90, 90);
+    text-decoration: underline;
+}
